@@ -1,0 +1,231 @@
+body {
+    background-color: var(--fundo-body);
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 5rem auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 730px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    gap: 40px;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .info .title-recipe {
+    font-family: var(--font-titles);
+    color: var(--cor-texto-escuro);
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.container .info p {
+    font-family: var(--font-texts);
+    color: var(--cor-texto-claro);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.container .preparation-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 30px;
+    background-color: var(--cor-fundo-prep-section);
+
+}
+
+.container .preparation-time h3 {
+    font-family: var(--font-texts);
+    color: var(--cor-preparation-section);
+    font-weight: 600;
+}
+
+.container .preparation-time ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.container .preparation-time li {
+    font-family: var(--font-texts);
+    color: var(--cor-texto-claro);
+    font-weight: 400;
+    list-style-type: disc;
+    padding-left: 12px;
+}
+
+.container .preparation-time li::marker {
+    color: var(--cor-preparation-section);
+}
+
+.container .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.container .list h2 {
+    font-family: var(--font-titles);
+    color: var(--cor-titulos);
+    font-weight: 100;
+}
+
+.container .list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.container .list li {
+    list-style-type: disc;
+    font-family: var(--font-texts);
+    color: var(--cor-texto-claro);
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+.container .list li::marker {
+    color: var(--cor-titulos);
+}
+
+.container .instructions li {
+    list-style-type: decimal;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #e3ddd7;
+}
+
+.container .nutrition {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-texts);
+    color: var(--cor-texto-claro);
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition-table tr {
+    border-bottom: 1px solid #e3ddd7;
+}
+
+.nutrition-table td {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: var(--cor-texto-claro);
+}
+
+.nutrition-table td:first-child {
+    padding-left: 20px;
+}
+
+.nutrition-table .nutrition-value {
+    color: var(--cor-titulos);
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+@media(max-width: 768px) {
+    main {
+        margin: 2rem auto;
+        max-width: 90%;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 16px;
+        gap: 16px;
+        border-radius: 10px;
+    }
+    .container img {
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        padding: 20px;
+    }
+
+    .container .info p {
+        padding: 0 20px;
+        line-height: 25px;
+    }
+
+    .container .preparation-time {
+        padding: 20px 60px;
+    }
+
+    .container .list {
+        padding: 10px 20px;
+    }
+
+}
+
+@media(max-width: 375px) {
+    main {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .container {
+       padding: 0;
+    }
+
+    .container h1 {
+        padding: 20px;
+    }
+
+    .container .info p {
+        padding: 0 30px;
+        line-height: 25px;
+    }
+
+
+    .container img {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .container .preparation-time {
+        padding: 0 0 0 60px;
+    }
+
+    .container .list {
+        padding: 0 40px;
+    }
+
+
+}

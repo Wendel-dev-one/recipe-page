@@ -1,0 +1,11 @@
+:root {
+    --fundo-body: hsl(30, 54%, 90%);
+    --cor-texto-claro: hsl(30, 10%, 34%);
+    --cor-texto-escuro: hsl(24, 5%, 18%);
+    --cor-titulos: hsl(14, 45%, 36%);
+    --cor-preparation-section: hsl(332, 51%, 32%);
+    --cor-fundo-prep-section: hsl(330, 100%, 98%);
+
+    --font-titles: 'Young Serif', sans-serif;
+    --font-texts: 'Outfit', sans-serif;
+}
